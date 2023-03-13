@@ -1,12 +1,12 @@
 <?php 
-$server = "127.0.0.1";
-$bd = 'bd_aplicacao';
-$usuario = 'root';
-$password = '';
+$server = "localhost";
+$usuario = "root";
+$password = "";
+$bd = "bd_aplicacao";
 
 
 // Cria uma conexão com o banco de dados
-$conexao = mysqli_connect($server, $bd, $usuario, $password);
+$conexao = mysqli_connect($server, $usuario, $password, $bd);
 
 // Verifica se a conexão foi estabelecida com sucesso
 if (!$conexao) {
